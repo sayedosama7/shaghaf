@@ -33,7 +33,49 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Add Room styles */
+/* start sidebar  */
+.active {
+    background-color: #20473F42 !important;
+    transform: translateX(15px) !important;
+    transition: all 0.3s ease-in-out !important;
+    border-radius: 5px !important;
+    position: relative;
+}
+
+.sidebar-all-links {
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+}
+
+.sidebar-all-links:not(.active):hover {
+    background-color: #20473F42 !important;
+    transition: all 0.3s ease-in-out !important;
+}
+
+.active::before {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 100%;
+    background-color: #20473E;
+    left: -10px;
+    top: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.sidebar-links {
+    color: #000 !important;
+}
+
+.MuiDrawer-paper {
+    overflow: hidden !important;
+}
+
+/* End sidebar  */
+
+/*start Add Room */
+
 .MuiDivider-root {
     display: none !important;
 }
@@ -116,7 +158,9 @@ input[type="search"]:focus {
     }
 }
 
-/* Add Room Form styles */
+/*End Add Room */
+
+/*start Add Room Form */
 .add-room-form {
     width: 100%;
 }
@@ -185,40 +229,4 @@ input[type="search"]:focus {
     }
 }
 
-.active {
-    background-color: #20473F42 !important;
-    transform: translateX(15px) !important;
-    transition: all 0.3s ease-in-out !important;
-    border-radius: 5px !important;
-    position: relative;
-}
-
-.sidebar-all-links {
-    padding: 10px 20px !important;
-    border-radius: 5px !important;
-}
-
-.sidebar-all-links:not(.active):hover {
-    background-color: #20473F42 !important;
-    transition: all 0.3s ease-in-out !important;
-}
-
-.active::before {
-    position: absolute;
-    content: '';
-    width: 6px;
-    height: 100%;
-    background-color: #20473E;
-    left: -10px;
-    top: 0;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-.sidebar-links {
-    color: #000 !important;
-}
-
-.MuiDrawer-paper {
-    overflow: hidden !important;
-}
+/*End Add Room Form */
